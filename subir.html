@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Subir Musica</title>
+    <link rel="stylesheet" href="subir.css">
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>Subir Cancion</h1>
+    </header>
+
+    <form action="agregar.php" method="post" enctype="multipart/form-data">
+        <section>
+            <label>Nombre de la cancion</label>
+            <input type="text" placeholder="Ej: Brave Shine" name="nombre" required>
+        </section>
+
+        <section>
+            <label>Artista</label>
+            <input type="text" placeholder="Ej: Aimer" name="artista" required>
+        </section>
+
+        <section>
+            <label>Archivo de audio</label>
+            <input type="file" accept="audio/*" name="cancion" required>
+        </section>
+
+        <section>
+            <label>Portada</label>
+            <input type="file" accept="image/*" name="imagen" required>
+        </section>
+
+        <section>
+            <button type="submit">Subir musica</button>
+        </section>
+    </form>
+    
+    <section>
+        <button onclick="window.location.href='index.html'">Regresar</button>
+    </section>
+</main>
+
+</body>
+</html>

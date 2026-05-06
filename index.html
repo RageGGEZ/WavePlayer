@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WavePlayer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>WavePlayer</h1>
+    <input type="text" id="busqueda" placeholder="Buscar musica o artista...">
+    <button onclick="window.location.href='subir.html'">Subir musica</button>
+</header>
+
+<main>
+    <section class="grid-musica" id="contenedor-musica"></section>
+</main>
+
+<footer class="player">
+    <section class="controles">
+        <button onclick="anterior()">⏮</button>
+        <button onclick="togglePlay()" id="btn-play">▶</button>
+        <button onclick="siguiente()">⏭</button>
+    </section>
+    <section class="player-info">
+        <p id="nombre-cancion">Sin reproduccion</p>
+        <p id="artista-cancion"></p>
+    </section>
+    <input type="range" id="barra" value="0">
+    <audio id="player-audio"></audio>
+</footer>   
+
+<script src="script.js"></script>
+
+</body>
+</html>
