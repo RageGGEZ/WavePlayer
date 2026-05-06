@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="Inicio Sesion.css">
+</head>
+<body>
+
+<main>
+    <h1>Spotify</h1>
+
+    <form action="login.php" method="POST">
+        <input type="text" name="usuario" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar sesión</button>
+        <p>¿No tienes cuenta? <a href="Registro.html">Regístrate</a></p>
+    </form>
+
+    <!-- mensaje de error -->
+    <p id="error"></p>
+</main>
+
+</body>
+</html>

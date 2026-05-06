@@ -1,0 +1,26 @@
+CREATE DATABASE spotify CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci;
+
+CREATE TABLE canciones(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nombre VARCHAR(100),
+	artista VARCHAR(100),
+	audio VARCHAR(255),
+	portada VARCHAR(255)
+);
+
+CREATE TABLE playlists (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100)
+);
+
+CREATE TABLE playlist_canciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_playlist INT,
+    id_cancion INT
+);
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
