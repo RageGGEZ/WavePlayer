@@ -1,7 +1,16 @@
 <?php
+session_start();
 include("conexion.php");
 
-$sql = "SELECT * FROM playlists";
+if (!isset($_SESSION['usuario_id'])) {
+    echo json_encode([]);
+    exit();
+}
+
+$usuario_id = $_SESSION['usuario_id'];
+
+
+$sql = "SELECT * FROM playlists WHERE usuario_id = $usuario_id";
 $result = $conexion->query($sql);
 
 $datos = [];

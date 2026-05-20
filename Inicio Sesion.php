@@ -4,17 +4,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="Inicio Sesion.css">
 </head>
 <body>
 
 <main>
-    <h1>Spotify</h1>
+    <h1>WAVEPLAYER</h1>
 
     <form action="login.php" method="POST">
         <input type="text" name="usuario" placeholder="Usuario" required>
         <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Iniciar sesión</button>
+        <button type="submit">Iniciar sesion</button>
     </form>
 
     <?php

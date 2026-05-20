@@ -7,6 +7,13 @@ let barra;
 let btn;
 let playlistActual = null;
 
+
+function cerrarSesion() {
+    if (confirm("¿Seguro que quieres cerrar sesión?")) {
+        window.location.href = "logout.php";
+    }
+}
+
 async function cargarCanciones() {
     try {
         let res = await fetch("obtener.php");
