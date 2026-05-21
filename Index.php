@@ -15,6 +15,7 @@
         <input type="text" name="usuario" placeholder="Usuario" required>
         <input type="password" name="password" placeholder="Contraseña" required>
         <button type="submit">Iniciar sesion</button>
+        <p>¿No tienes cuenta? <a href="Registro.html">Regístrate</a></p>
     </form>
 
     <?php

@@ -18,10 +18,10 @@ if ($resultado->num_rows > 0) {
     if (password_verify($password, $user['password'])) {
         $_SESSION['usuario_id'] = $user['id'];  
         $_SESSION['usuario'] = $usuario;
-        header("Location: index.html");
+        header("Location: principal.html");
         exit();
     }
 }   
 
-header("Location: Inicio Sesion.html");
+header("Location: Index.html");
 ?>
