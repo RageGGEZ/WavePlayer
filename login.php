@@ -23,5 +23,5 @@ if ($resultado->num_rows > 0) {
     }
 }   
 
-header("Location: Index.html");
+header("Location: index.php"); 
 ?>
