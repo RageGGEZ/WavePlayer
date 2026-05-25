@@ -53,7 +53,7 @@ $stmt->bind_param("sss", $usuario, $correo, $passwordHash);
 
 if ($stmt->execute()) {
 
-    header("Location: ../Inicio Sesion.php");
+    header("Location: ../index.php");
 
 } else {
 

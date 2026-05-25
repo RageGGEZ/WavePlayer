@@ -4,9 +4,9 @@ require_once('conexion.php');
 $rawInput = file_get_contents('php://input');
 $contentType = $_SERVER['CONTENT_TYPE'] ?? 'No definido';
 
-// Si no hay datos POST pero hay rawInput, intentar parsear
+
 if (empty($_POST) && !empty($rawInput) && strpos($contentType, 'multipart/form-data') !== false) {
-    // Intentar extraer datos manualmente
+   
     $boundary = substr($contentType, strpos($contentType, 'boundary=') + 9);
     if ($boundary) {
         $parts = explode('--' . $boundary, $rawInput);
